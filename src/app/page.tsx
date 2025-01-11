@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import { Hero } from "@/components/Hero";
 import Submenu from "@/components/home/submenu";
 import { getDataHome } from "@/utils/actions/get-data";
 import { HomeProps } from "@/utils/home.types";
