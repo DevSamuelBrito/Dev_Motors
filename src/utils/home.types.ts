@@ -19,7 +19,7 @@ export interface HomeProps {
           imgix_url: string;
         };
       };
-      service: ServicesProps[];
+      services: ServicesProps[];
       contact: {
         email: string;
         phone: string;
