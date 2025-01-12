@@ -115,3 +115,22 @@
     font-weight: bold;
   }
 }
+
+@media (min-width: 640px) {
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .innerService {
+    width: 280px;
+    height: 200px;
+  }
+
+  .serviceTitle {
+    margin-top:50px;
+    font-size: 34px;
+  }
+}
