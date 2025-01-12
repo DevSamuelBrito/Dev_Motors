@@ -22,7 +22,8 @@ export function Services({ object }: HomeProps) {
         </div>
       </section>
 
-      <h2 className={styles.servicesTitle}>
+      <h2 className={styles.servicesTitle}>Conheça nossos serviços
+          </h2>
         <section className={styles.services}>
         {object.metadata.services.map( service => (
         <article key={service.description} className={styles.service}>
@@ -39,7 +40,6 @@ export function Services({ object }: HomeProps) {
         </article>
       ))}
         </section>
-      </h2>
     </>
   );
 }
