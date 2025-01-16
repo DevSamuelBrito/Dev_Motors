@@ -5,6 +5,7 @@ import { getDataHome } from "@/utils/actions/get-data";
 import { HomeProps } from "@/utils/home.types";
 import { Phone } from "lucide-react";
 import { Services } from "@/components/home/services";
+import Footer from "@/components/home/footer";
 
 export default async function Home() {
   const { object }: HomeProps = await getDataHome();
@@ -20,7 +21,8 @@ export default async function Home() {
         icon={<Phone size={24} color="#fff" />}
       />
       <Container>
-        <Services  object={object}/>
+        <Services object={object} />
+        <Footer object={object} />
       </Container>
     </main>
   );
