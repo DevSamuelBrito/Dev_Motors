@@ -2,11 +2,16 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./styles.module.scss";
+import { MenuProps } from "@/utils/menu.types";
 import { X, Menu } from "lucide-react";
 
-const Submenu = () => {
-  const [open, setOpen] = useState(false);
+interface SubMenuProps {
+  menu: MenuProps;
+}
 
+const Submenu = ({ menu }: SubMenuProps) => {
+  const [open, setOpen] = useState(false);
+  console.log(menu);
   useEffect(() => {
     const toogleHandle = () => {
       if (window.innerWidth > 768) {
@@ -25,7 +30,6 @@ const Submenu = () => {
         <Menu size={24} color="#121212" />
         Menu
       </div>
-      
 
       <ul className={`${styles.ul} ${open ? styles.open : ""}`}>
         {open && (
@@ -33,12 +37,12 @@ const Submenu = () => {
             <X size={54} color="#121212" />
           </button>
         )}
-        <li>
-          <Link href="/home">Página 1</Link>
-        </li>
-        <li>
-          <Link href="/home">Página 2</Link>
-        </li>
+
+        {menu.objects.map((item) => (
+          <li>
+            <Link href={`/post/${item.slug}`}>{item.title}</Link>
+          </li>
+        ))}
       </ul>
     </section>
   );
