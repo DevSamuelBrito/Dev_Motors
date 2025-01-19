@@ -11,7 +11,7 @@ interface SubMenuProps {
 
 const Submenu = ({ menu }: SubMenuProps) => {
   const [open, setOpen] = useState(false);
-  console.log(menu);
+  // console.log(menu);
   useEffect(() => {
     const toogleHandle = () => {
       if (window.innerWidth > 768) {

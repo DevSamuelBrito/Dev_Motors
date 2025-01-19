@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export async function getDataHome() {
   try {
     const rest = await fetch(
@@ -50,6 +52,6 @@ export async function getItemBySlug(itemSlug: string) {
 
     return res.json();
   } catch (error) {
-    throw new Error("Failed to fetch Slug");
+    redirect("/");
   }
 }

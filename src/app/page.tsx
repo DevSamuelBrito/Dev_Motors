@@ -11,7 +11,7 @@ import { MenuProps } from '@/utils/menu.types'
 export default async function Home() {
   const { object }: HomeProps = await getDataHome();
   const menu: MenuProps = await getSubMenu();
-  console.log(menu);
+  // console.log(menu);
 
   return (
     <main>
