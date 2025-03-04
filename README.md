@@ -47,6 +47,13 @@ DevMotors é um projeto de uma oficina especializada em manutenção de carros, 
 - **eslint.config.mjs**: Configuração do ESLint.
 - **postcss.config.mjs**: Configuração do PostCSS.
 
+
+## Variáveis de Ambiente
+
+- **NEXT_PUBLIC_API_URL**: URL da API pública do Cosmic JS utilizada para buscar dados do site.
+- **READ_KEY**: Chave de leitura utilizada para autenticar as requisições à API do Cosmic JS.
+
+
 ## Como Executar o Projeto
 
 Primeiro, instale as dependências:
@@ -57,3 +64,15 @@ npm install
 yarn install
 # ou
 pnpm install
+```
+Em seguida, execute o servidor de desenvolvimento:
+
+```bash
+npm run dev
+# ou
+yarn run dev
+# ou
+pnpm run dev
+```
+
+Abra http://localhost:3000 no seu navegador para ver o resultado.
