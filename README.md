@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevMotors
 
-## Getting Started
+DevMotors é um projeto de uma oficina especializada em manutenção de carros, localizada em São Paulo. Este projeto foi desenvolvido utilizando o framework Next.js e outras tecnologias modernas para criar uma aplicação web responsiva e otimizada.
 
-First, run the development server:
+## Funcionalidades
+
+- **Página Inicial**: Exibe um banner com informações principais e um botão de chamada para ação.
+- **Serviços**: Seção que descreve os serviços oferecidos pela oficina, com imagens ilustrativas.
+- **Contatos**: Informações de contato, incluindo email, telefone, endereço e horário de funcionamento.
+- **Submenu**: Menu de navegação para acessar diferentes páginas do site.
+- **Página de Post**: Exibe detalhes de um post específico baseado no slug da URL.
+- **Erro 404**: Página de erro personalizada para quando uma página não é encontrada.
+
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para desenvolvimento de aplicações web.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+- **Sass**: Pré-processador CSS para estilização.
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
+- **Lucide React**: Biblioteca de ícones React.
+- **Cosmic JS**: CMS utilizado para gerenciar o conteúdo do site.
+- **Vercel**: Plataforma de deploy para aplicações Next.js.
+
+## Estrutura do Projeto
+
+- **src/app**: Contém as páginas da aplicação.
+  - **page.tsx**: Página inicial.
+  - **post/[slug]**: Página de post dinâmico.
+  - **layout.tsx**: Layout principal da aplicação.
+  - **globals.scss**: Estilos globais.
+- **src/components**: Componentes reutilizáveis.
+  - **Hero**: Componente de banner principal.
+  - **Container**: Componente de contêiner para centralizar conteúdo.
+  - **Header**: Cabeçalho da aplicação.
+  - **home**: Componentes específicos da página inicial (submenu, serviços, footer).
+- **src/utils**: Funções utilitárias e tipos.
+  - **actions/get-data.ts**: Funções para buscar dados da API.
+  - **post.types.ts**: Tipos TypeScript para posts.
+  - **home.types.ts**: Tipos TypeScript para a página inicial.
+  - **menu.types.ts**: Tipos TypeScript para o menu.
+- **public**: Arquivos públicos, como imagens e ícones.
+- **.next**: Diretório gerado pelo Next.js durante o build.
+- **.env.local**: Arquivo de variáveis de ambiente.
+- **tailwind.config.ts**: Configuração do Tailwind CSS.
+- **tsconfig.json**: Configuração do TypeScript.
+- **eslint.config.mjs**: Configuração do ESLint.
+- **postcss.config.mjs**: Configuração do PostCSS.
+
+## Como Executar o Projeto
+
+Primeiro, instale as dependências:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install
+# ou
+yarn install
+# ou
+pnpm install
