@@ -17,10 +17,8 @@ DevMotors é um projeto de uma oficina especializada em manutenção de carros, 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
 - **Sass**: Pré-processador CSS para estilização.
-- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
 - **Lucide React**: Biblioteca de ícones React.
 - **Cosmic JS**: CMS utilizado para gerenciar o conteúdo do site.
-- **Vercel**: Plataforma de deploy para aplicações Next.js.
 
 ## Estrutura do Projeto
 
